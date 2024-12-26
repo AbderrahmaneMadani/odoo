@@ -1,0 +1,21 @@
+<odoo>
+    <data noupdate="0">
+        <!-- Example Service Categories -->
+        <record id="category_cleaning" model="services.category">
+            <field name="name">Cleaning</field>
+        </record>
+        <record id="category_plumbing" model="services.category">
+            <field name="name">Plumbing</field>
+        </record>
+
+        <!-- Example Services -->
+        <record id="service_house_cleaning" model="services.service">
+            <field name="name">House Cleaning</field>
+            <field name="category_id" ref="category_cleaning"/>
+        </record>
+        <record id="service_leak_fixing" model="services.service">
+            <field name="name">Leak Fixing</field>
+            <field name="category_id" ref="category_plumbing"/>
+        </record>
+    </data>
+</odoo>
